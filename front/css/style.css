@@ -1,0 +1,428 @@
+/**color : var(--primary);
+color : #000000;**/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root {
+    --primary: #b7a26d;
+    --bgcolor: #000; 
+    --topbar: rgba(0,0,0,.95);
+    --available:#48ad44;
+    --unavailable : red;
+  }
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+p {
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+}
+i {
+    color : var(--primary);
+}
+ul {
+    list-style: none;
+    display: flex;
+}
+h3 {
+    font-weight:600;
+    font-size: 25px;
+    text-align: center;
+    text-transform: capitalize;
+}
+button , .button {
+    padding: 8px 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    line-height: 20px !important;
+    font-size: 11px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.topbar {
+    background-color: var(--topbar);
+    padding: 10px 0px;
+}
+.topbar .container , header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topbar p {
+    display: flex;
+    column-gap: 15px;
+}
+.topbar .container ul {
+    column-gap: 16px;
+}
+.topbar a , header a {
+    color: #fff;
+}
+header {
+    background-color: var(--bgcolor);
+    padding: 10px 0px;
+}
+header .logo {
+    max-width: 170px;
+}
+.button.trans {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+header .buttons {
+    column-gap: 10px;
+    display: flex;
+}
+/****************modal css************/
+label {
+    font-size: 14px;
+    line-height: 24px;
+    color: #0A122B;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+}
+.form-group
+{
+    width:100%;
+    display: block;
+    margin-bottom: 20px;
+}
+.form-control {
+    font-size: 14px;
+    line-height: 24px;
+    color: #5F5B5B;
+    border: 1px solid #5F5B5B;
+    padding: 12px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 7px;
+    font-family: 'Poppins';
+}
+.forgot , b.singup , b.login
+{
+    cursor: pointer;
+}
+/************modal css*************/
+form.user-process , .success-message {
+    max-width: 100%;
+    margin: 0 auto;
+}
+.success-message .form-header {
+    text-align: center;
+}
+.success-message .form-header img {
+    max-width: 120px;
+    margin-bottom: 10px;
+}
+.modal-pop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0,0,0,.5);
+    max-height: 100%;
+    overflow-y: scroll;
+    padding: 70px 20px;
+    box-sizing: border-box;
+    display: none;
+    z-index: 9999;
+}
+.modal-pop.active {
+    display: block;
+}
+.modal-pop::-webkit-scrollbar {
+    display:none;
+} 
+.modal-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.modal-content-pop {
+    background: #fff;
+    padding: 60px 50px;
+    position: relative;
+    width: 100%;
+    max-width: 691px;
+    box-sizing: border-box;
+}
+.modal-content-pop .close {
+    position: absolute;
+    width: 35px;
+    right: 9px;
+    filter: invert(1);
+    cursor: pointer;
+    top: 9px;
+}
+form h3 , form p {
+    text-align: center;
+    margin: 0px;
+}
+.form-header {
+    margin-bottom: 25px;
+}
+.two-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.two-label label {
+    width: auto;
+}
+.form-group.checkbox {
+    display: flex;
+    align-items: center;
+}
+input.check {
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+}
+.passeye {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.passeye img.eye {
+    position: absolute;
+    right: 15px;
+    width: 30px;
+    top: 17px;
+    z-index: 1;
+    cursor: pointer;
+}
+label.small.button-bottom {
+    text-align: center;
+    padding: 0px 10px;
+    margin-top:10px;
+}
+/*********************sign up************/
+form#signup .form-group:nth-child(2) , form#signup .form-group:nth-child(3) {
+    width: calc(50% - 10px);
+    float: left;
+}
+form#signup .form-group:nth-child(3) {
+    margin-left: 20px;
+}
+.button.yellow {
+    display:block;
+    text-align:center;
+    padding:12px;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+.form-header p {
+    color: #808080;
+    font-size: 14px;
+    max-width: 450px;
+    margin: 10px auto 0px;
+}
+.form-group.checkbox label {
+    margin-left: 10px;
+}
+.form-control::placeholder {
+    text-transform: capitalize;
+}
+/*****************main***************/
+main {
+    padding: 70px 0px;
+    background: url(../images/icons.png);
+    background-size: 550px;
+}
+.escorts {
+    padding: 30px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 10px);
+    margin-left: -5px;
+}
+.esc-card {
+    position: relative;
+    overflow:hidden;
+    cursor: pointer;
+    width: calc(100% / 8 - 10px);
+    margin: 0px 5px 10px 5px;
+    box-sizing: border-box;
+}
+.esc-card::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(30deg, black, transparent);
+}
+.card-des {
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    padding: 10px 10px 20px;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.card-des h4 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+button.card-read {
+    transition-duration: 0.5s;
+    border: none;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    column-gap: 7px;
+    margin-top: 10px;
+    max-height: 0px !important;
+    padding: 0px;
+    overflow: hidden;
+}
+.esc-card:hover button.card-read {
+    padding: inherit;
+    overflow: visible;
+    visibility: visible;
+    transition-duration: 0.5s;
+}
+button.card-read span.dash {
+    display: block;
+    height: 2px;
+    background: var(--primary);
+    width: 25px;
+}
+button.available {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: var(--available);
+    padding: 2px 8px;
+    font-size: 8px;
+    border-radius: 0px;
+    visibility: hidden;
+    height:0px;
+    overflow: hidden;
+    padding:0px;
+    border:none;
+}
+.esc-card:hover button.available {
+    visibility: visible;
+    transition-duration: 0.5s;
+    height:auto;
+    padding:2px 8px;
+    border: 1px solid #fff;
+}
+button.available.red {
+    background: var(--unavailable);
+}
+.esc-card img {
+    margin-bottom: -10px;
+}
+.view-more-button {
+    display: flex;
+    justify-content: center;
+}
+.view-more-button button.view-more, .button.yellow {
+    border: 1px solid #ad9967;
+    background: #ad9967;
+    font-size: 14px;
+}
+footer {
+    background: var(--bgcolor);
+    padding: 20px 0px;
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+footer ul {
+    column-gap: 20px;
+}
+.successmsg {
+    color: green;
+	text-align: center;
+}
+.errormsg{
+	color: red;
+	text-align: center;
+}
+@media (max-width:1024px) {
+.esc-card {
+    width: calc(100% / 3 - 10px);
+}
+button.card-read span.dash {
+    width:25px;
+}
+.topbar  {
+    display: none;
+}
+.card-des h4 {
+    font-weight: 600;
+    font-size: 18px;
+}
+p {
+    font-size: 12px;
+    line-height: 20px;
+}
+button, .button {
+    font-size:12px;
+}
+.esc-card:hover button.available {
+    padding: 0px 8px;
+}
+button.available {
+    font-size: 10px;
+}
+h3 {
+    font-size: 24px;
+}
+}
+@media (min-width:1440px) {
+    .card-des h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    button, .button {
+        font-size: 14px;
+    }
+}
+@media (max-width:768px) {
+    .esc-card {
+        width: calc(100% / 3 - 10px);
+    }
+}
+@media (max-width:480px) {
+    .esc-card {
+        width: calc(100% / 2 - 10px);
+    }
+}
